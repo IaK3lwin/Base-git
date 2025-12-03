@@ -72,7 +72,7 @@ Aqui é quando o trabalho chega ao "fim" ou um estágio aceitável. Nesse local 
 
 Usando o comando `git diff <nome do arquivo>`
 
-[Imagem demostrando o diff](https://res.cloudinary.com/dyvfesbzn/image/upload/v1764770892/diff_whcfau.png)
+![Imagem demostrando o diff](https://res.cloudinary.com/dyvfesbzn/image/upload/v1764770892/diff_whcfau.png)
 
 Com ela é possível ver o que foi adicionado ou removido no working directory.
 
@@ -95,3 +95,17 @@ Meu Deus! Que trem GIGANTESCO!!! sim, de fato é enorme kkkk, mas não é obriga
 `git commit` <- Diz que vamos confirmar mudanças para o git repository
 
 `-m` <- é a abreviação de `-message`, é aquela **identificação** que temos que pôr nas mudanças, lembra? e por que você usou duas vezes o parâmetro `-m`? Basicamente quando usamos o `-m` pela primeira vez, escrevemos uma mensagem na primeira linha, ou seja, quando adiciono um segundo `-m` estou escrevendo na segunda linha do commit uma outra mensagem.
+
+![commit changes](https://res.cloudinary.com/dyvfesbzn/image/upload/v1764771875/commitchanges_kozy2r.png)
+
+Podemos agilizar o processo usando outro parâmetro no comando `commit`, o `-a` adicionar arquivos que não foram adicionados ao **stage** sem a necessidade de usar o comando `git add` toda vez que for fazer um commmit.
+
+### Ajustando o último commit feito
+
+Usando o commit `git commit --amend -m "ajustando o ultimo commit"` com isso você altera o último commit.
+
+## Diferenças entre o último commit e o stage atual
+
+Usando o comando `git diff --staged` você consegue comparar as mudanças atuais do **stage** que ainda não foi confirmado com o último commit no **git repository**
+
+![Git diff entre staged e git repository](https://res.cloudinary.com/dyvfesbzn/image/upload/v1764773388/diffstaged_v8xsf6.png)
