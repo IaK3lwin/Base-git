@@ -60,4 +60,15 @@ Você pode trabalhar aqui avontade! Modificar, deletar e criar arquivos. Fez alg
 Ao adicionar seu trabalho no **stage** ele vai para um lugar espécial no git. Aqui ele já está sendo rasteadro e versionado, as mudanças aqui são salvas e podemos dá nomes a essas alterações, mas ela não está de fato "salva" no repositório do git. Para registrar esse evento no repositório é preciso 'confirma' essas alterações, ao confirmar criamos um histórico de mudanças. Ao confirma dando uma descrição ela será levada para o repositório git,
 a mudança recente recebe um **HEAD**, a cabeça do repositório o inicío de outras versões do mesmo arquivo.
 
+Não lembro se já citei, mas para adicionar arquivos para o **stage** é necessário usar o commando `git add <nome do arquivo>` ou para adicionar todas pastas de um diretório use o comando `git add .`. Ou para adicionar todas as alterações do **working directory** use o parâmetro `-A`: `git add -A`. Ainda dá para mover por seleção: `git add *.txt` todos arquivos e textos serão movidos para o **stage**.
+
+Vale ressaltar que os arquivos "validos" quando versionados são os que estão no ambiente git. O que significa que as alterações no **working directory** não são "originais" até que você adicione elas ao **storage** e posteriomente ao **git repository**. O que significa que qualquer alteração no working directory, você pode voltar a versão original ou uma versão qualquer usando alguns commandos. O git `git restore <file name>`, volta ao estado original do código que está no **storage**.
+
 ## Repositório git
+
+Aqui é quando o trabalho chega ao "fim" ou um estágio aceitável. Nesse local que os arquivos são salvos permanentimentes, códigos finalizados e prontos para a produção.
+
+## diferenças do stage e o working directory
+
+Usando o comando `git diff <nome do arquivo>`
+
