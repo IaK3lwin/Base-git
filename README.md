@@ -55,7 +55,7 @@ Aqui você está apenas modificando e trabalhando no diretório, arquivos criado
 
 Você pode trabalhar aqui avontade! Modificar, deletar e criar arquivos. Fez algo que não gostou? pode voltar a versão anterior que foi "salva" pelo git etc...
 
-## Stage
+### Stage
 
 Ao adicionar seu trabalho no **stage** ele vai para um lugar espécial no git. Aqui ele já está sendo rasteadro e versionado, as mudanças aqui são salvas e podemos dá nomes a essas alterações, mas ela não está de fato "salva" no repositório do git. Para registrar esse evento no repositório é preciso 'confirma' essas alterações, ao confirmar criamos um histórico de mudanças. Ao confirma dando uma descrição ela será levada para o repositório git,
 a mudança recente recebe um **HEAD**, a cabeça do repositório o inicío de outras versões do mesmo arquivo.
@@ -64,7 +64,7 @@ Não lembro se já citei, mas para adicionar arquivos para o **stage** é necess
 
 Vale ressaltar que os arquivos "validos" quando versionados são os que estão no ambiente git. O que significa que as alterações no **working directory** não são "originais" até que você adicione elas ao **storage** e posteriomente ao **git repository**. O que significa que qualquer alteração no working directory, você pode voltar a versão original ou uma versão qualquer usando alguns commandos. O git `git restore <file name>`, volta ao estado original do código que está no **storage**.
 
-## Repositório git
+### Repositório git
 
 Aqui é quando o trabalho chega ao "fim" ou um estágio aceitável. Nesse local que os arquivos são salvos permanentimentes, códigos finalizados e prontos para a produção.
 
