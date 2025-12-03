@@ -72,3 +72,26 @@ Aqui é quando o trabalho chega ao "fim" ou um estágio aceitável. Nesse local 
 
 Usando o comando `git diff <nome do arquivo>`
 
+[Imagem demostrando o diff](https://res.cloudinary.com/dyvfesbzn/image/upload/v1764770892/diff_whcfau.png)
+
+Com ela é possível ver o que foi adicionado ou removido no working directory.
+
+## Confirmando as alterações no working directory
+
+Estamos modificando e trabalhando em nosso working directory, mas cheguei em um nível aceitavel, adicionei eles ao stage e agora quero confirma essas mudanças e versionar elas, como confirmo elas?
+
+Aprendemos a mové-las do working directory para o stage, mas como confirmamos as alterações do stage e mandamos elas para git repository?
+
+Para isso é necessário nomeiar e até mesmo descrever essas alterações, para isso usamos o comando `git commit`. Com ele podemos rastreiar quem fez mudanças, evitar a sobreescrita dos códigos que é fundamental para trabalhar em equipe.
+
+### commit
+
+Vamos então fazer nosso commit! Vamos mandar as alterações do arquivo `newFile.txt` para o git repository:
+
+`git commit -m "Title: Adicionando novo texto ao newFile.txt" -m "Description: um texto que representa uma alteração que não está no stage e que agora está de fato sendo rastreada pelo git, pois usamos o commando git add para adicionar ao stage."`
+
+Meu Deus! Que trem GIGANTESCO!!! sim, de fato é enorme kkkk, mas não é obrigatorio escrever um commit desse tamanho. Vamos decompor as partes do comando commit:
+
+`git commit` <- Diz que vamos confirmar mudanças para o git repository
+
+`-m` <- é a abreviação de `-message`, é aquela **identificação** que temos que pôr nas mudanças, lembra? e por que você usou duas vezes o parâmetro `-m`? Basicamente quando usamos o `-m` pela primeira vez, escrevemos uma mensagem na primeira linha, ou seja, quando adiciono um segundo `-m` estou escrevendo na segunda linha do commit uma outra mensagem.

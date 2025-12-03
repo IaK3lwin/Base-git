@@ -1,1 +1,2 @@
-estou no stage 
+estou no stage
+ainda não estou no stage, ainda estou no working directory
